@@ -41,12 +41,6 @@ end
 totalBins   = length(lengthBins);
 output{totalBins-1,3} = [];
 
-%in column 1 of output, put the min chromosome length
-%in column 2 of output, put the max chromosome length
-%in column 3 of output, put the total number of chromosomes in the bin
-%in column 4 of output, put the calculate inter-interval 
-%distances and corresponding coefficient of coincidences 
-
 for bin = 1:totalBins-1
     output{bin,1} = lengthBins(bin);
     output{bin,2} = lengthBins(bin+1);
